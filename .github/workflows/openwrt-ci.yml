@@ -6418,12 +6418,6 @@ jobs:
       - name: Prepare artifact
         run: find ./bin/targets/ -type d -name "packages" | xargs rm -rf {}
 
-      - name: Upload config.seed
-        uses: actions/upload-artifact@master
-        with:
-          name: config.seed
-          path: ./bin/targets/x86/64/config.seed
-
       - name: Upload firmware
         uses: actions/upload-artifact@master
         with:
